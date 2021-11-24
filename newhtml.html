@@ -1,11 +1,17 @@
-<!-- Bootstrap CSS -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CourseX</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 <link rel="stylesheet" href="styleNav.css">
+</head>
+<body>
 
 <div class="navbar navbar-fixed-top container-fluid" id="navbar">
   <div class="navbar-header">
@@ -14,7 +20,7 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>                        
    </button>
-   <a class="navbar-brand">Brand</a>
+   <a class="navbar-brand">CourseX</a>
  </div>
  <div class="collapse navbar-right navbar-collapse" id="myNavbar">
    <ul class="nav navbar-nav">
@@ -22,15 +28,37 @@
      <li>Topics</li>
      <li>About Us</li>
      <li>Resources</li>
-     <li><button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+           <label class="switch">
+           <input type="checkbox" onclick="changeMode()">
+           <span class="slider"></span>
+       </label>
+
+       <li><button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-log-in"></span> Log in</button></li>
      <li><button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
    </ul>
  </div>
 </div>
 
 <div class="para">
-  <h3>Your page content goes here...</h3>
+  <h5>Upskill yourself with the latest courses</h5>
+    <div class="container">
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+        <form action="">
+        <input type="search" placeholder="Find what you're looking for..."/>
+        <i class="fa fa-search"></i>
+        </form>
+    </div>
 </div>
+<script>
+      function changeMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+ </script>
+</body>
+</html>
 
 
 

@@ -10,17 +10,24 @@
 <!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="card2.css" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+
+          crossorigin="anonymous">
+
 </head>
 <body>
 
-<div class="navbar navbar-fixed-top container-fluid" id="navbar">
+<div class="navbar  navbar-fixed-top container-fluid" id="navbar">
   <div class="navbar-header">
    <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>                        
    </button>
-   <a class="navbar-brand">CourseX</a>
+      <!--<a class="navbar-brand">CourseX</a>-->
+      <img src="Images/Logo-white.png" class="logo">
  </div>
  <div class="collapse navbar-right navbar-collapse" id="myNavbar">
    <ul class="nav navbar-nav">
@@ -33,8 +40,8 @@
            <span class="slider"></span>
        </label>
 
-       <li><button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-log-in"></span> Log in</button></li>
-     <li><button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
+       <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+     <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
    </ul>
  </div>
 </div>
@@ -49,8 +56,157 @@
         <input type="search" placeholder="Find what you're looking for..."/>
         <i class="fa fa-search"></i>
         </form>
+        <p class="para-2"><center>Providing the best courses from <br>
+        <i>Coursera, Edx, Udemy </i> and many more</center></p>
+        <section class="wrapper">
+            <div class="container-fostrap">
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card">
+                                    <a class="img-card" href="#">
+                                        <img src="Images/android.png" />
+                                    </a>
+                                    <div class="card-content">
+                                        <h4 class="card-title">
+                                            <a href="#"> Android Application Development
+                                            </a>
+                                        </h4>
+                                        <p class="">
+                                            Learn complete Android App development from scratch..
+                                        </p>
+                                    </div>
+                                    <div class="card-read-more">
+                                        <a href="#" class="btn btn-link btn-block">
+                                            Know More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card">
+                                    <a class="img-card" href="#">
+                                        <img src="Images/data science.jpg" />
+                                    </a>
+                                    <div class="card-content">
+                                        <h4 class="card-title">
+                                            <a href="#"> Data Science
+                                            </a>
+                                        </h4>
+                                        <p class="">
+                                            Learn Data Science with cutting edge technology by our mentors..
+                                        </p>
+                                    </div>
+                                    <div class="card-read-more">
+                                        <a href="#" class="btn btn-link btn-block">
+                                            Know More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card">
+                                    <a class="img-card" href="#">
+                                        <img src="Images/big data.jpg" />
+                                    </a>
+                                    <div class="card-content">
+                                        <h4 class="card-title">
+                                            <a href="#"> Big Data
+                                            </a>
+                                        </h4>
+                                        <p class="">
+                                            Learn Big Data with Hadoop, build databases with Hands on..
+                                        </p>
+                                    </div>
+                                    <div class="card-read-more">
+                                        <a href="#" class="btn btn-link btn-block">
+                                            Know More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+        <div class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <div>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <image src="Images/cloud.jpg" height="200" width="350"></image>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content">
+                    <h3>
+                        Cloud Computing
+                    </h3>
+                    <p>With everything moving to cloud, learn this super scalable technology..</p>
+                </div>
+            </div>
+        </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <div class="slide slide1">
+                        <div class="content">
+                            <div>
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                <image src="Images/spring.jpg" height="200" width="350"></image>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="content">
+                            <h3>
+                                Spring Boot
+                            </h3>
+                            <p>Learn one of the largest framework with our experts..</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <div class="slide slide1">
+                        <div class="content">
+                            <div>
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                <image src="Images/hacking.jpg" height="200" width="350"></image>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="content">
+                            <h3>
+                                Ethical Hacking
+                            </h3>
+                            <p>Be a Certified Ethical Hacker right now, from a beginner to advanced..</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
     </div>
 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
 <script>
       function changeMode() {
          var element = document.body;

@@ -23,28 +23,35 @@ body{
 .nav li:after{
   content: '';
   display: block;
-    border-bottom: 2px solid #38fd07;
-    transform: scaleX(0);
-    transition: .2s ease-in-out;
+  border-bottom: 2px solid #38fd07;
+  transform: scaleX(0);
+  transition: .2s ease-in-out;
 }
 
-.navbar-brand
+/*.navbar-brand
 {
     letter-spacing: 15px;
     font-size: 30px;
 
     text-shadow: 4px 2px;
-    }
+    } */
+
+  .btn {
+    border-radius: 8px;
+    padding: 4px,4px;
+    
+  }
 
 .logo{
 
     height: 60px;
     width: 170px;
     padding: 10px 20px;
-    opacity: 70%;
+    opacity: 100%;
     margin-top: 20px;
-    margin-left: 40px;
-    }
+    margin-left: 20px;
+    
+    
 
 
 
@@ -53,7 +60,7 @@ body{
 
 .nav li:hover:after{
    transform: scaleX(1);
-}
+}  
 
 .para{
     min-height: 500px;

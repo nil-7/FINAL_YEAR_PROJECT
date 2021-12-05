@@ -32,6 +32,7 @@ body{
 {
     letter-spacing: 15px;
     font-size: 30px;
+
     text-shadow: 4px 2px;
     }
 
@@ -45,6 +46,10 @@ body{
     margin-left: 40px;
     }
 
+
+
+    text-shadow: 3px 3px;
+    }
 
 .nav li:hover:after{
    transform: scaleX(1);
@@ -152,7 +157,12 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 .dark-mode {
+
   background: #162447;
+
+
+  //background: #0b0a14;
+  background: #082032;
 
 }
 .dark-mode h1 {
@@ -228,6 +238,7 @@ form:hover .fa{
     background: #07051a;
     color: white;
 }
+
 
 //Cards-1
 
@@ -328,6 +339,7 @@ h1.heading {
   font-weight:200;
   text-transform: uppercase
 }
+
 
 
 

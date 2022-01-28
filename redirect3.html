@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CourseX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" href="redirect2_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="js/navbar-js.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="card2.css" />
+
+    <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+
+    <script src="Script/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="navbar  navbar-fixed-top container-fluid" id="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <!--<a class="navbar-brand">CourseX</a>-->
+        <img src="Images/Logo-white.png" class="logo">
+
+        <!--<a class="navbar-brand">CourseX</a>-->
+
+    </div>
+    <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <a href="newhtml.html"><li>Home</li></a>
+            <li>Topics</li>
+            <li>About Us</li>
+            <li>Resources</li>
+            <label class="switch">
+                <input type="checkbox" onclick="changeMode()">
+                <span class="slider"></span>
+            </label>
+
+
+            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
+
+
+        </ul>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/big data.jpg" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">Big Data Specialization</h2>
+            <div class="card-area_uni">University of California San Diego</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">Do you need to understand big data and how it will impact your business?
+                This Specialization is for you. You will gain an understanding of what insights big data can provide through hands-on experience with the tools
+                and systems used by big data scientists and engineers. Previous programming experience is not required! You will be guided through
+                the basics of using Hadoop with MapReduce, Spark, Pig and Hive. By following along with provided code,</p>
+            <a href="https://www.coursera.org/specializations/big-data?#about" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/big data.jpg" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">The Ultimate Hands-On Hadoop: Tame your Big Data!</h2>
+            <div class="card-area_uni">Sundog Education by Frank Kane</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">Hadoop tutorial with MapReduce, HDFS, Spark, Flink, Hive, HBase, MongoDB, Cassandra, Kafka + more! Over 25 technologies.</p>
+            <a href="https://www.udemy.com/course/the-ultimate-hands-on-hadoop-tame-your-big-data/" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/big data.jpg" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">Big Data, Hadoop, and Spark Basics</h2>
+            <div class="card-area_uni">IBM</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">This course provides foundational big data practitioner knowledge and analytical skills using popular big data tools, including Hadoop and Spark.
+                Learn and practice your big data skills hands-on.</p>
+            <a href="https://www.edx.org/course/big-data-hadoop-and-spark-basics?index=product&queryID=7a72a8ab6b86c61c29439d3fc07a6476&position=1" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+</div>
+</body>

@@ -28,6 +28,10 @@ transform: scaleX(0);
 transition: .2s ease-in-out;
 }
 
+a>li{
+color: white;
+}
+
 /*.navbar-brand
 {
   letter-spacing: 15px;
@@ -94,6 +98,9 @@ transition: .2s ease-in-out;
   box-sizing: border-box;
 }
 .card-area_img {
+  min-width: 40rem;
+  max-width: 40rem;
+  height: 27rem;
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
@@ -103,6 +110,7 @@ transition: .2s ease-in-out;
 .card-area_img img {
   width: 100%;
   height: 100%;
+  object-fit: fill;
   object-fit: cover;
   display: block;
   border-radius: .8rem;
@@ -152,7 +160,8 @@ transition: .2s ease-in-out;
 .card-area_rating span {
   
   margin: .5rem 0;
-  display: block;
+  display: block ;
+ display: block;
 }
 
   

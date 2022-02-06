@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CourseX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" href="redirect2_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="js/navbar-js.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="card2.css" />
+
+    <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+
+    <script src="Script/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="navbar  navbar-fixed-top container-fluid" id="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <!--<a class="navbar-brand">CourseX</a>-->
+        <img src="Images/Logo-white.png" class="logo">
+
+        <!--<a class="navbar-brand">CourseX</a>-->
+
+    </div>
+    <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <a href="newhtml.html"><li>Home</li></a>
+            <li>Topics</li>
+            <li>About Us</li>
+            <li>Resources</li>
+            <label class="switch">
+                <input type="checkbox" onclick="changeMode()">
+                <span class="slider"></span>
+            </label>
+
+
+            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
+
+
+        </ul>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/java.jfif" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">Advanced Data Structures in Java</h2>
+            <div class="card-area_uni">University of California San Diego</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">In this course, you’ll learn about data structures, like graphs, that are fundamental for
+                working with structured real world data.  You will develop, implement, and
+                analyze algorithms for working with this data to solve real world problems.</p>
+            <a href="https://www.coursera.org/learn/advanced-data-structures?" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/java.jfif" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">Advanced Java Programming</h2>
+            <div class="card-area_uni">Infinite Skills</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">This Advanced Java Tutorial includes: generic programming, sequential
+                and associative data structures, classic data structures, sorting and searching, exception handling,
+                database programming with JDBC, networking programming GUI development using Swing and an overview of Multithreading. You will also explore Java Applets, web applications (Servlets), advanced input and output classes, more advanced strings, regular expressions, Java graphics, and finally, closing off with a look at using Eclipse.
+            </p>
+            <a href="https://www.udemy.com/course/advanced-java-programming/" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/java.jfif" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">Introduction to Java Programming: Fundamental Data Structures and Algorithms</h2>
+            <div class="card-area_uni">UC3Mx</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">Learn to enhance your code by using fundamental data structures and powerful algorithms in Java.</p>
+            <a href="https://www.edx.org/course/introduction-to-java-programming-fundamental-data?index=product&queryID=c2e49b328882f09ecbf3f995a0313520&position=21" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+</div>
+</body>

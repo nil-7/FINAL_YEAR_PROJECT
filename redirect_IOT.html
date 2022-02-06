@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CourseX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" href="redirect2_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="js/navbar-js.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="card2.css" />
+
+    <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+
+    <script src="Script/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="navbar  navbar-fixed-top container-fluid" id="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <!--<a class="navbar-brand">CourseX</a>-->
+        <img src="Images/Logo-white.png" class="logo">
+
+        <!--<a class="navbar-brand">CourseX</a>-->
+
+    </div>
+    <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <a href="newhtml.html"><li>Home</li></a>
+            <li>Topics</li>
+            <li>About Us</li>
+            <li>Resources</li>
+            <label class="switch">
+                <input type="checkbox" onclick="changeMode()">
+                <span class="slider"></span>
+            </label>
+
+
+            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
+
+
+        </ul>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/iot.jfif" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">An Introduction to Programming the Internet of Things (IOT) Specialization</h2>
+            <div class="card-area_uni">University of California, Irvine</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">This Specialization covers embedded systems, the Raspberry Pi Platform,
+                and the Arduino environment for building devices that can control the physical world. In the final
+                Capstone Project, you’ll apply the skills you learned by designing, building, and testing a microcontroller-based embedded system,
+                producing a unique final project</p>
+            <a href="https://www.coursera.org/specializations/iot?" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/iot.jfif" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">Complete Guide to Build IOT Things from Scratch to Market</h2>
+            <div class="card-area_uni">Junaid Ahmed</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">Build IOT products using Arduino, NodeMCU,ESP8266, IOT Platforms,
+                Sensors, Displays, Keypads,Relays, PCB's,Casing & more
+            </p>
+            <a href="https://www.udemy.com/course/complete-guide-to-build-iot-things-from-scratch-to-market/" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+
+    <div class="card-area">
+
+        <div class="card-area_img"><img src="Images/iot.jfif" alt="error"></div>
+        <div class="card-area_info">
+            <h2 class="card-area_title">IoT: from hardware to practice</h2>
+            <div class="card-area_uni">ITMO University</div>
+            <div class="card-area_rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="card-area_text">You will start from the basic tools of the Internet of Things
+                technology and will finish with a high-level programming. During this program you will work
+                on IoT projects with Arduino, Raspberry Pi, ESP32 hardware.</p>
+            <a href="https://www.edx.org/professional-certificate/itmox-iot-from-hardware-to-practice?index=product&queryID=bf69b0cc687628f1ab318c415a605bff&position=2" class="card-area_cta btn btn-info">Know
+                more</a>
+
+        </div>
+    </div>
+</div>
+</body>

@@ -15,12 +15,13 @@ body{
     display: flex;
 
  }
- .nav li{
+ .nav li {
     padding: 20px;
     cursor: pointer;
     font-size: 20px;
 }
 .nav li:after{
+  text-decoration: none;
   content: '';
   display: block;
   border-bottom: 2px solid #38fd07;

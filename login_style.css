@@ -1,5 +1,14 @@
+.logo{
+
+    height: 50px;
+    width: 137px;
+    opacity: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-shadow: 3px 3px;
+    }
 body{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ),url(Images/login.jpg);
+	background-image:url(Images/sample2.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -71,6 +80,4 @@ border-radius: 23px 21px 23px 24px;
 h1{
 	color: #FFFFFF;
 }
-
-
 

@@ -28,8 +28,9 @@ transform: scaleX(0);
 transition: .2s ease-in-out;
 }
 
-a>li{
+a>li,a:visited{
 color: white;
+text-decoration: none;
 }
 
 /*.navbar-brand
@@ -48,17 +49,11 @@ color: white;
 
 .logo{
 
-  height: 60px;
-  width: 170px;
-  padding: 10px 20px;
+  height: 120px;
+  width: 150px;
   opacity: 100%;
   margin-top: 20px;
   margin-left: 20px;
-  
-  
-
-
-
   text-shadow: 3px 3px;
   }
 
@@ -98,10 +93,7 @@ color: white;
   box-sizing: border-box;
 }
 .card-area_img {
-  min-width: 40rem;
-  max-width: 40rem;
-  height: 27rem;
-  min-width: 35rem;
+  min-width: 52rem;
   max-width: 35rem;
   height: 30rem;
   transform: translateX(-8rem);
@@ -164,5 +156,4 @@ color: white;
  display: block;
 }
 
-  
 

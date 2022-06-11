@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+        $loggedin = true;
+    }
+    else {
+        $loggedin = false;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +45,8 @@
         */border-top-style: solid;margin-left: 15px;margin-bottom: 0px;padding-bottom: 50px;padding-top: 20px;padding-right: 5px;padding-left: 9px;margin-top: 0px;"
         ></a>
     </div>
-    <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+    <?php
+    echo '<div class="collapse navbar-right navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <a href="newhtml.html"><li>Home</li></a>
             <li>Topics</li>
@@ -46,13 +56,27 @@
             <label class="switch">
                 <input type="checkbox" onclick="changeMode()">
                 <span class="slider"></span>
-            </label>
+            </label>';
 
-            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-log-in"></span> Log in</button></li>
-            <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
-        </ul>
+            if(!empty($loggedin)){
+                if($loggedin){
+                      echo '<li><button type="button" onclick="location.href=\'logout.php\'";" class="btn btn-default btn-sm"><span
+                              class="glyphicon glyphicon-sign-up"></span> Log out</button></li>'; 
+                      }
+                  }
+                  if(empty($loggedin)){
+                      if(!$loggedin){
+                      echo '
+                      <li><button type="button" onclick="location.href=\'Login.php\'";" class="btn btn-default btn-sm"><span
+                      class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+                      <li><button type="button" onclick="location.href=\'register.php\'";" class="btn btn-default btn-sm"><span
+                          class="glyphicon glyphicon-sign-up"></span> Sign up</button></li> ';
+                      }}
+
+        echo '</ul>
     </div>
-</div>
+</div>';
+?>
 <div class ="team-section">
     <h1><center>Our Team</center></h1>
     <span class="border"></span>

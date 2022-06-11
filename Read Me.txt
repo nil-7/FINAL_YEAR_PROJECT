@@ -1,0 +1,3 @@
+Paste this entire Project in a C:\xampp\htdocs\Final Year Project
+go to the browser & in the url bar paste this link " localhost/FINAL_YEAR_PROJECT-main "
+now you will see all the files & folder of the project 

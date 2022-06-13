@@ -1,0 +1,6 @@
+install and open the xampp
+start the apache & sql server
+click on the admin button beside the sql server
+it will take you to myphpadmin page
+there create a database named project and inside the project import this user table
+that's it. you are done.

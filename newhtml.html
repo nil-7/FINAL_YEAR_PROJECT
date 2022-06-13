@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+    if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+        $loggedin = true;
+    }
+    else {
+        $loggedin = false;
+    }
+    
+    
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 
@@ -44,10 +57,21 @@
             <!--<a class="navbar-brand">CourseX</a>-->
 
         </div>
-        <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+        <?php 
+      
+       echo '<div class="collapse navbar-right navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                
-                   
+                <li>';
+                    if(!empty($loggedin)){
+                        echo 'Welcome ';echo '<strong>';
+                        if($loggedin){
+                                
+                              echo $_SESSION['username']; 
+                              }
+                              echo '</strong>'; echo '!';
+                          }
+                   echo '</li>   
                 <li>Home</li>
                 <li>Topics</li>
                 <a href="team.html"><li>About Us</li></a>
@@ -55,21 +79,36 @@
                 <label class="switch">
                     <input type="checkbox" onclick="changeMode()">
                     <span class="slider"></span>
-                </label>
-
-
-                <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
-                            class="glyphicon glyphicon-log-in"></span> Log in</button></li>
-                <li><button type="button" onclick="location.href='Login.html';" class="btn btn-default btn-sm"><span
-                            class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>
-
+                </label>';
+               
+                if(!empty($loggedin)){
+                  if($loggedin){
+                        echo '<li><button type="button" onclick="location.href=\'logout.php\'";" class="btn btn-default btn-sm"><span
+                                class="glyphicon glyphicon-sign-up"></span> Log out</button></li>'; 
+                        }
+                    }
+                    if(empty($loggedin)){
+                        if(!$loggedin){
+                        echo '
+                        <li><button type="button" onclick="location.href=\'Login.php\'";" class="btn btn-default btn-sm"><span
+                        class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+                        <li><button type="button" onclick="location.href=\'register.php\'";" class="btn btn-default btn-sm"><span
+                            class="glyphicon glyphicon-sign-up"></span> Sign up</button></li> ';
+                        }}
+  
+                
+                echo '
                 <!--<li><button type="button" class="btn btn-default btn-sm"><span
                             class="glyphicon glyphicon-log-in"></span> Log in</button></li>
                 <li><button type="button" class="btn btn-default btn-sm"><span
                             class="glyphicon glyphicon-sign-up"></span> Sign up</button></li>-->
+             
             </ul>
         </div>
-    </div>
+    </div>';?>
+ 
+               
+
 
     <div class="para">
         <h5>Upskill yourself with the latest courses</h5>
@@ -80,7 +119,7 @@
             &nbsp;&nbsp;
             <form action="">
                 <input type="search" placeholder="Find what you're looking for..." />
-                <i class="fa fa-search"></i>
+                <a href="searchRedirect.html"><i class="fa fa-search"></i></a>
             </form>
 
             <p class="para-2">

@@ -8,9 +8,9 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contributors</title>
     <link rel="stylesheet" href="teamstyle.css">
@@ -20,117 +20,152 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styleNav.css">
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="js/navbar-js.js"></script> -->
+
     <link rel="stylesheet" type="text/css" media="screen" href="card2.css" />
 
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 
-          crossorigin="anonymous">
-
+    <script src="Script/script.js"></script>
 
 </head>
+
 <body>
-<div class="navbar  navbar-fixed-top container-fluid" id="navbar">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <!--<a class="navbar-brand">CourseX</a>-->
-        <a href="newhtml.html"><img src="Images/LOGO - Dark Mode.png" class="logo" style="border-left-width: 0px;
-        border-left-style: solid;border-right-style: solid;
-        border-right-width: 0px;border-bottom-style: solid;
-        border-bottom-width: 0px;
-        /*! border-top-width: -42px; 
-        */border-top-style: solid;margin-left: 15px;margin-bottom: 0px;padding-bottom: 50px;padding-top: 20px;padding-right: 5px;padding-left: 9px;margin-top: 0px;"
-        ></a>
-    </div>
-    <?php
-    echo '<div class="collapse navbar-right navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-            <a href="newhtml.html"><li>Home</li></a>
-            <li>Topics</li>
-            <li>About Us</li>
-            <li>Resources</li>
-            <li>Our Team</li>
-            <label class="switch">
-                <input type="checkbox" onclick="changeMode()">
-                <span class="slider"></span>
-            </label>';
 
-            if(!empty($loggedin)){
-                if($loggedin){
-                      echo '<li><button type="button" onclick="location.href=\'logout.php\'";" class="btn btn-default btn-sm"><span
-                              class="glyphicon glyphicon-sign-up"></span> Log out</button></li>'; 
+    <div class="navbar  navbar-fixed-top container-fluid" id="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!--<a class="navbar-brand">CourseX</a>-->
+            <a href="newhtml.html"><img src="Images/LOGO - Dark Mode.png" class="logo" style="border-left-width: 0px;
+                border-left-style: solid;border-right-style: solid;
+                border-right-width: 0px;border-bottom-style: solid;
+                border-bottom-width: 0px;
+                /*! border-top-width: -42px; 
+                */border-top-style: solid;margin-left: 15px;margin-bottom: 0px;padding-bottom: 50px;padding-top: 20px;padding-right: 5px;padding-left: 9px;margin-top: 0px;"
+                >
+            </a>
+
+            <!--<a class="navbar-brand">CourseX</a>-->
+        
+            
+        </div>
+        <?php
+        echo ' <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <a href="newhtml.html">
+                    <li>Home</li>
+                </a>
+                <li>Topics</li>
+                <a href="team.html"><li>About Us</li></a>
+                <li>Resources</li>
+                <label class="switch">
+                    <input type="checkbox" onclick="changeMode()">
+                    <span class="slider"></span>
+                </label>';
+
+
+                if(!empty($loggedin)){
+                    if($loggedin){
+                          echo '<li><button type="button" onclick="location.href=\'logout.php\'";" class="btn btn-default btn-sm"><span
+                                  class="glyphicon glyphicon-sign-up"></span> Log out</button></li>'; 
+                          }
                       }
-                  }
-                  if(empty($loggedin)){
-                      if(!$loggedin){
-                      echo '
-                      <li><button type="button" onclick="location.href=\'Login.php\'";" class="btn btn-default btn-sm"><span
-                      class="glyphicon glyphicon-log-in"></span> Log in</button></li>
-                      <li><button type="button" onclick="location.href=\'register.php\'";" class="btn btn-default btn-sm"><span
-                          class="glyphicon glyphicon-sign-up"></span> Sign up</button></li> ';
-                      }}
+                      if(empty($loggedin)){
+                          if(!$loggedin){
+                          echo '
+                          <li><button type="button" onclick="location.href=\'Login.php\'";" class="btn btn-default btn-sm"><span
+                          class="glyphicon glyphicon-log-in"></span> Log in</button></li>
+                          <li><button type="button" onclick="location.href=\'register.php\'";" class="btn btn-default btn-sm"><span
+                              class="glyphicon glyphicon-sign-up"></span> Sign up</button></li> ';
+                          }}
 
-        echo '</ul>
-    </div>
-</div>';
-?>
-<div class ="team-section">
-    <h1><center>Our Team</center></h1>
-    <span class="border"></span>
-    <div class="ps">
-        <a href="#p1"><img src="Images/nilchat1.jpeg" alt=""></a>
-        <a href="#p2"><img src="Images/sourin.jpg" alt=""></a>
-        <a href="#p3"><img src="Images/dipayan.jpeg" alt=""></a>
-        <a href="#p4"><img src="Images/nilban.jpg" alt=""></a>
 
-    </div>
 
-    <div class="section" id="p1">
-        <span class="name">Nilavo Chatterjee</span>
+            echo '</ul>
+        </div>
+    </div>';
+    ?>
+    <div class ="team-section" style="padding-top: 95px;"">
+        <h1><center>Our Team</center></h1>
         <span class="border"></span>
-        <p>Department of Computer Science and Engineering
-            <br> Future Institute of Technology
-            <br>Email: <i>nilavoc007@gmail.com</i></p>
-
-
+        <div class="ps">
+            <a href="#p1"><img src="Images/nilchat1.jpeg" alt=""></a>
+            <a href="#p2"><img src="Images/sourin.jpg" alt=""></a>
+            <a href="#p3"><img src="Images/dipayan.jpeg" alt=""></a>
+            <a href="#p4"><img src="Images/nilban.jpg" alt=""></a>
+    
+        </div>
+    
+        <div class="section" id="p1">
+            <span class="name">Nilavo Chatterjee</span>
+            <span class="border"></span>
+            <p>Department of Computer Science and Engineering
+                <br> Future Institute of Technology
+                <br>Email: <i>nilavoc007@gmail.com</i></p>
+    
+    
+        </div>
+        <div class="section" id="p2">
+            <span class="name"> Sourin Das</span>
+            <span class="border"></span>
+            <p>Department of Computer Science and Engineering
+                <br> Future Institute of Technology
+                <br>Email: <i>sourin01.das@gmail.com</i></p>
+    
+    
+        </div>
+        <div class="section" id="p3">
+            <span class="name"> Dipayan Saha</span>
+            <span class="border"></span>
+            <p>Department of Computer Science and Engineering
+                <br> Future Institute of Technology
+                <br>Email: <i>dipayansaha000@gmail.com</i></p>
+    
+    
+        </div>
+        <div class="section" id="p4">
+            <span class="name"> Nilavo Banerjee </span>
+            <span class="border"></span>
+            <p>Department of Computer Science and Engineering
+                <br> Future Institute of Technology
+                <br>Email: <i>nilavobanerjee18@gmail.com</i></p>
+    
+    
+        </div>
+        <div>
+            <h1><center>Our Mentor</center></h1>
+            <span class="border"></span>
+            <div class="ps" style="padding-left: 400px;">
+            <a href="#p5"><img src="Images/sourav.png" alt=""></a>
+            </div>
+    
+            <div class="section" id="p5">
+            <span class="name">Sourav Das</span>
+            <span class="border"></span>
+            <p>Assistant Professor<br> Department of Computer Science & Engineering (AIML)
+                <br> Future Institute of Technology
+                <br>Email: <i>sourav.das@teamfuture.in</i></p>
+            </div>
+        </div>
     </div>
-    <div class="section" id="p2">
-        <span class="name"> Sourin Das</span>
-        <span class="border"></span>
-        <p>Department of Computer Science and Engineering
-            <br> Future Institute of Technology
-            <br>Email: <i>sourin01.das@gmail.com</i></p>
-
-
-    </div>
-    <div class="section" id="p3">
-        <span class="name"> Dipayan Saha</span>
-        <span class="border"></span>
-        <p>Department of Computer Science and Engineering
-            <br> Future Institute of Technology
-            <br>Email: <i>dipayansaha000@gmail.com</i></p>
-
-
-    </div>
-    <div class="section" id="p4">
-        <span class="name"> Nilavo Banerjee </span>
-        <span class="border"></span>
-        <p>Department of Computer Science and Engineering
-            <br> Future Institute of Technology
-            <br>Email: <i>nilavobanerjee18@gmail.com</i></p>
-
-
-    </div>
-
-</div>
-<script>
-      function changeMode() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
- </script>
+    <!-- <div class ="team-section">
+        
+    
+    </div> -->
+    <script>
+          function changeMode() {
+             var element = document.body;
+             element.classList.toggle("dark-mode");
+          }
+     </script>
+    
 </body>
-</html>
